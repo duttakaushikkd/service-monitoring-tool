@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="1426" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Company" vertex="1">
+          <mxGeometry height="230" width="370" x="170" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-3" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="UUID (Integer - PK)" vertex="1">
+          <mxGeometry height="30" width="340" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-4" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="company_id (Integer - AK)" vertex="1">
+          <mxGeometry height="30" width="320" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-5" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="company_name (String)" vertex="1">
+          <mxGeometry height="30" width="330" x="30" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-6" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="registered_address (String)" vertex="1">
+          <mxGeometry height="30" width="310" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-7" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="service_count (Integer)" vertex="1">
+          <mxGeometry height="30" width="150" x="115" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-8" parent="HM4_AUI91KS3K6c0Ju-F-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="created_at(DateTime )" vertex="1">
+          <mxGeometry height="30" width="140" x="115" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Service" vertex="1">
+          <mxGeometry height="250" width="200" x="160" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-10" parent="HM4_AUI91KS3K6c0Ju-F-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="UUID (Integer - PK)" vertex="1">
+          <mxGeometry height="30" width="160" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-13" parent="HM4_AUI91KS3K6c0Ju-F-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="latest_health (enum)" vertex="1">
+          <mxGeometry height="30" width="140" x="30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-14" parent="HM4_AUI91KS3K6c0Ju-F-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="last_updated_at (DateTime)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Created _at(Datetime)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="30" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="service_id(Integer -AK, FK)" vertex="1">
+          <mxGeometry height="30" width="160" x="190" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="service_name (String)" vertex="1">
+          <mxGeometry height="30" width="140" x="190" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="HM4_AUI91KS3K6c0Ju-F-17" edge="1" parent="1" source="HM4_AUI91KS3K6c0Ju-F-9" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="HM4_AUI91KS3K6c0Ju-F-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="450" as="sourcePoint" />
+            <mxPoint x="450" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
