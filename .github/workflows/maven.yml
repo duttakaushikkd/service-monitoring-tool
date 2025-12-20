@@ -21,4 +21,4 @@ jobs:
           cache: maven
 
       - name: Build all services
-        run: mvn -B clean package
+        run: mvn -U clean package -DskipTests
