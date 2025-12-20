@@ -1,0 +1,12 @@
+services:
+  name: registration-service
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:6200/service-monitoring-tool_db
+    username: service-monitoring-tool_user
+    password: service-monitoring-tool_pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto : update
