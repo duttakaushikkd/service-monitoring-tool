@@ -12,6 +12,7 @@ public class RequestService implements RequestImplementation {
 
     @Override
     public String addRequest(Request request) {
+        //pubish event to kafka
         return requestRepository.save(request).toString();
     }
 }
