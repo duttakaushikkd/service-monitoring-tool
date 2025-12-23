@@ -1,8 +1,8 @@
 package com.example.decision.monitoring_service.service;
 
+import com.example.decision.monitoring_service.DTO.RequestDto;
 import com.example.decision.monitoring_service.Implementation.RequestImplementation;
 import com.example.decision.monitoring_service.Repository.RequestRepository;
-import com.example.decision.monitoring_service.entity.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class RequestService implements RequestImplementation {
@@ -11,7 +11,7 @@ public class RequestService implements RequestImplementation {
     RequestRepository requestRepository;
 
     @Override
-    public String addRequest(Request request) {
+    public String addRequest(RequestDto request) {
         //pubish event to kafka
         return requestRepository.save(request).toString();
     }
