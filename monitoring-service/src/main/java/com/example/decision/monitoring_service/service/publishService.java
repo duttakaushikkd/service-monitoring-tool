@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class publishService {
 
-    private final KafkaTemplate<String, RequestDto> kafkaTemplate;
+    private final KafkaTemplate<String, Object> kafkaTemplate;
 
 
-    public publishService(KafkaTemplate<String, RequestDto> kafkaTemplate) {
+    public publishService(KafkaTemplate<String, Object> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 

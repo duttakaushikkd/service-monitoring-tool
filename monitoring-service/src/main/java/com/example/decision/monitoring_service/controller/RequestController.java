@@ -7,6 +7,7 @@ import com.example.decision.monitoring_service.entity.Request;
 import com.example.decision.monitoring_service.service.publishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,7 +22,7 @@ public class RequestController {
     public  publishService publishService;
 
     @PostMapping("/request")
-    public String requestMap(RequestDto requestDto){
+    public String requestMap(@RequestBody  RequestDto requestDto){
 
         try{
             publishService.publishMessage(requestDto);
