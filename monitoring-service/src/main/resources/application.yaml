@@ -1,6 +1,9 @@
 service:
   name: monitoring-service
 
+server:
+  port: 8081
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:6200/service-monitoring-tool_db
