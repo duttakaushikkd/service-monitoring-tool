@@ -9,6 +9,9 @@ function Navbar() {
       <NavLink to="/monitoring" style={styles.link}>
         Monitoring
       </NavLink>
+      <NavLink to="/registration" style={styles.link}>
+        Registration
+      </NavLink>
     </nav>
   );
 }
