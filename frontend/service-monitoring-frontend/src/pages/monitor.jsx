@@ -4,13 +4,13 @@ import React from "react";
 function Monitor() {
   const [serviceStatus, setServiceStatus] = React.useState("All systems operational");
 
-  async function handleSubmit(serviceName, status) {
-    console.log(`Service Name: ${serviceName}, Status: ${status}`);
+  async function handleSubmit(serviceName, serviceUrl) {
+    console.log(`Service Name: ${serviceName}, Service URL: ${serviceUrl}`);
     try {
       const response = await fetch('http://localhost:5000/api/monitor', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ serviceName, status }),
+        body: JSON.stringify({ serviceName, serviceUrl }),
       });
 
       if (!response.ok) {
@@ -37,19 +37,15 @@ function Monitor() {
             e.preventDefault();
             const form = e.target;
             const serviceName = form.serviceName.value;
-            const status = form.status.value;
-            handleSubmit(serviceName, status);
+            const serviceUrl = form.serviceUrl.value;
+            handleSubmit(serviceName, serviceUrl);
           }}
         >
           <label>Service Name:</label>
           <input type="text" name="serviceName" />
           <br />
-          <label>Status:</label>
-          <select name="status">
-            <option value="operational">Operational</option>
-            <option value="degraded">Degraded Performance</option>
-            <option value="down">Down</option>
-          </select>
+          <label>Service url:</label>
+          <input type="text" name="serviceUrl" />
           <br />
           <button type="submit">Get Status</button>
         </form>
