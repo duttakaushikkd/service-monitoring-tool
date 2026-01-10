@@ -1,8 +1,8 @@
 import './App.css'
-import Home from './pages/home.jsx'
-import Monitor from './pages/monitor.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import Monitor from './pages/Monitor'
 
 function App() {
   return (
